@@ -50,13 +50,13 @@ struct ContentView: View {
                 let randNum2 = Int.random(in: 1...3)
                 let randNum3 = Int.random(in: 1...3)
                 
+                //Changing Credit Count
                 if (randNum1 == randNum2) && (randNum1 == randNum3){
                     creditCount += 50
                 }
                 else{
                     creditCount -= 10
                 }
-                
                 
                 //changing imageAsset1
                 if randNum1 == 1{
@@ -68,6 +68,7 @@ struct ContentView: View {
                 else if randNum1 == 3{
                     imageAsset1 = "star"
                 }
+                
                 //changing imageAsset2
                 if randNum2 == 1{
                     imageAsset2 = "apple"
@@ -78,6 +79,7 @@ struct ContentView: View {
                 else if randNum2 == 3{
                     imageAsset2 = "star"
                 }
+                
                 //changing imageAsset3
                 if randNum3 == 1{
                     imageAsset3 = "apple"
@@ -98,14 +100,9 @@ struct ContentView: View {
                     .background(Color.red)
                     .cornerRadius(30.0)
             }
-
             Spacer()
-            
-            
         }
     }
-    
-    
     //Methods
 }
 
